@@ -14,17 +14,6 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articals = {
-    'artical-two': {
-        title: 'im arunnath',
-        heading: 'second webapp',
-        date: 'sep 4 2017',
-        content: 
-        <p> 
-       ' hello sir'
-        </p>
-    },
-};
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
